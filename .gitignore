@@ -4,3 +4,29 @@ composer.phar
 # Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
+
+# ── Secrets et configuration locale ──────────────
+.env
+.env.local
+.env.*.local
+config/*.local.php
+*.key
+*.pem
+
+# ── Dépendances ──────────────────────────────────
+/node_modules/
+
+# ── Fichiers système et éditeurs ─────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# ── Journaux et temporaires ──────────────────────
+*.log
+/tmp/
+
+# ── Sauvegardes de base de données ───────────────
+*.sql.gz
+*.dump
